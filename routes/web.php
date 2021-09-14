@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return 'hello!';
-});
+// Route::get('/', function () {
+//     return 'hello!';
+// });
+
+Route::get('/', 'App\Http\Controllers\ItemController@index');
+
 
 Route::get('/comments/{a}', function ($a) {
     if ($a == 'morning') {
