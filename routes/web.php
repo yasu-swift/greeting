@@ -12,7 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/', function () {
+    return '<h1>Hello from Root!!</h1>';
+    
+});
 // Route::get('/', function () {
 //     return 'hello!';
 // });
