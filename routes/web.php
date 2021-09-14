@@ -20,7 +20,7 @@ Route::get('/', function () {
 //     return 'hello!';
 // });
 
-Route::get('/', 'App\Http\Controllers\ItemController@index');
+// Route::get('/', 'App\Http\Controllers\ItemController@index');
 
 
 Route::get('/comments/{a}', function ($a) {
