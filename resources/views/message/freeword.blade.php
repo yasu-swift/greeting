@@ -7,7 +7,7 @@
     <title>greeting_app</title>
 </head>
 <body>
-    <h1>{{ $first }}</h1>
+    <h1>自由なメッセージ</h1>
     <h2>{{ $free }}</h2>
 </body>
 </html>

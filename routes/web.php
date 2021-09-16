@@ -16,4 +16,4 @@ Route::get('/', function () {
     return '<h1>Hello from Root!!!!!</h1>';
 });
 Route::get('/comments/{greeting}', [App\Http\Controllers\CommentsController::class, 'greeting']);
-Route::get('/comments/{greeting}/{freeword}', [App\Http\Controllers\CommentsController::class, 'free']);
+Route::get('/comments/freeword/{freeword}', [App\Http\Controllers\CommentsController::class, 'free']);
