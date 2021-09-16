@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
-    return view('welcome');
+    return '<h1>Hello from Root!!!!!</h1>';
 });
+Route::get('/comments/{greeting}', [App\Http\Controllers\CommentsController::class, 'greeting']);
+Route::get('/comments/freeword/{freeword}', [App\Http\Controllers\CommentsController::class, 'free']);
